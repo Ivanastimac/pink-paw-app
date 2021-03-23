@@ -1,0 +1,52 @@
+#page-container {
+  position: relative;
+  min-height: 100vh; /*viewport height*/
+}
+
+#content-wrap {
+  padding-bottom: 5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: hotpink;
+  height: 5rem; /*relative eye movement = 16px*/
+}
+
+#left_footer{
+  float: left;
+  margin-left: 1%;
+  color: white;
+  font-size: 100%;
+}
+
+#right_footer{
+  float: right;
+  margin-right: 1%;
+}
+
+#right_footer img{
+  height: 100%;
+  width: auto;
+}
+
+#center_footer {
+  float: left;
+  position: relative;
+  left: 40%;
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: purple;
+}
+a:active {
+  color: darkred;
+}

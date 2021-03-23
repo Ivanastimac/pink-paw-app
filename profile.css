@@ -1,0 +1,90 @@
+  .win {
+    width: 450px;
+    padding: 30px 30px 10px 30px;
+    background-color: white;
+    font-family: -webkit-pictograph;
+    color: hotpink;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 34%;
+    margin-top: 5%;
+  }
+
+  .logout, .delete, .update {
+    color: white;
+    background-color: hotpink;
+    font-family: papyrus;
+    border-color: white;
+    font-size: medium;
+    cursor: pointer;
+  }
+
+  .logout:focus, .delete:focus, .update:focus {
+    outline-style: none;
+  }
+
+  .logout:active, .delete:active, .update:active {
+    box-shadow: 0 12px 16px 0 white, 0 17px 50px 0 white;
+    transform: translateY(4px);
+}
+
+  .conteinerButton {
+    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  table.animal {
+    border: 1px solid hotpink;
+    border-radius: 5%;
+    background-color: white;
+    display: inline-block;
+    font-weight: bold;
+    width: 550px;
+  }
+  
+  td {
+    color: hotpink;
+    padding: 5px 5px 5px 5px;
+    font-size: medium;
+  }
+  
+  tr {
+    padding-bottom: 10px;
+  }
+
+  tr.crta td {
+    border-top: solid 1px hotpink;
+  }
+  
+  img {
+    width: 200px;
+    max-height: auto;
+  }
+
+  a:link {
+    color: purple;
+  }
+  
+  a:visited {
+    color: hotpink;
+  }
+  
+  a:hover {
+    color: darkmagenta;
+  }
+  
+  a:active {
+    color: darkred;
+  }
+  
+  .upload {
+    color: white;
+    background-color: hotpink;
+    font-family: papyrus;
+    border-color: white;
+    margin-left: 5%;
+    font-size: small;
+}
+  
+  

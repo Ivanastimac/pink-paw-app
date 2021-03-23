@@ -1,0 +1,63 @@
+body {
+    background-color: lightpink;
+}
+
+.animal {
+    display: flex;
+    justify-content: center;
+}
+
+.animals {
+    border: 1px solid hotpink;
+    border-radius: 5%;
+    background-color: white;
+    display: inline-block;
+    font-weight: bold;
+    font-size: small;
+}
+
+td {
+    color: hotpink;
+    padding: 10px 20px 5px 20px;
+    width: 250px;
+    font-size: medium;
+}
+
+tr.crta td {
+    border-top: solid 1px hotpink;
+}
+
+img {
+    width: 200px;
+    max-height: auto;
+}
+
+.adopt {
+    color: hotpink;
+    font-family: papyrus;
+    border:  1px solid hotpink;
+    font-size: medium;
+    font-weight: bold;
+    background-color: white;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.gumb {
+    padding-top: 200px;
+    padding-left: 5px;
+}
+
+input[type = submit]:hover {
+    box-shadow: 0 12px 16px 0 white, 0 17px 50px 0 white;
+}
+
+input[type = submit]:active {
+    box-shadow: 0 12px 16px 0 white, 0 17px 50px 0 white;
+    transform: translateY(4px);
+}
+
+input[type = submit]:focus {
+    outline-style: none;
+}

@@ -1,0 +1,62 @@
+body {
+    background-color: lightpink;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#message1 {
+    color: darkred;
+    font-size: 70%;
+}
+
+#message2 {
+    vertical-align: middle;
+}
+
+.win {
+    border-style: solid;
+    border-color: white;
+    padding: 20px 20px 20px 50px;
+    height: fit-content;
+    width: 200px;
+    margin: 0 auto;
+    background-color: hotpink;
+    font-family: papyrus;
+    color: white;
+    font-size: larger;
+    align-content: center;
+}
+
+.gumbPotvrda {
+    color: white;
+    background-color: hotpink;
+    font-family: papyrus;
+    border-color: white;
+    margin-left: 15%;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.gumbPromjena {
+    text-decoration: none;
+    color: white;
+    font-family: papyrus;
+    font-size: medium;
+    cursor: pointer;
+}
+
+input[type = text]:focus {
+    outline-style: none;
+}
+
+input[type = password]:focus {
+    outline-style: none;
+}
+
+input[type = submit]:focus {
+    outline-style: none;
+}

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Register
+        </title>
+        <link rel = "stylesheet" type = "text/css" href = "login-register.css">
+        <script src = "register.js"></script>
+    </head>
+    <body>
+        <div align = "center">
+            <img src = "./images/logo.png" alt = "PinkPaw" class = "logo">
+        </div>
+        <div class = "win">
+        <form action = "register.php" method = "POST">
+            Name: <br />
+            <input type = "text" name = "name" /> <br /><br />
+            Surname: <br />
+            <input type = "text" name = "surname" /> <br /><br />
+            Username: <br />
+            <input type = "text" name = "username" /> <br /><br />
+            Password: <br />
+            <input type = "password" name = "pass" id = "pass" onkeyup = 'len();' onkeyup = 'check();'/> 
+            <span id = 'message1'><br /><br /></span>
+            Confirm password: <br />
+            <input type = "password" name = "passConf" id = "passConf" onkeyup = 'check();' onclick = 'check();'/> 
+            <span id = 'message2'></span>
+            <br /><br /><br />
+            <a class = "gumbPromjena" href = "login.html">
+                LogIn
+            </a>
+            <input class = "gumbPotvrda" type = "submit" name = "gumbReg" value = "Register" />
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+.container {
+  position: absolute;
+  right: 5;
+  top: 5;
+  width: 500px;
+  cursor: pointer;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  right: 5;
+  top: 5;
+  width: 80px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  top: 5; 
+  right: 4;
+  background: rgb(255, 0, 179);
+  background: rgba(226, 9, 161, 0.596);
+  color: #f1f1f1; 
+  width: 8%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 100%;
+  padding: 4%;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
