@@ -1,0 +1,161 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 23, 2021 at 07:08 PM
+-- Server version: 10.4.16-MariaDB
+-- PHP Version: 7.4.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `pinkpawdb`
+--
+
+-- --------------------------------------------------------
+
+CREATE DATABASE `pinkpawdb` DEFAULT CHARACTER SET utf8mb4;
+
+USE `pinkpawdb`;
+
+--
+-- Table structure for table `pets`
+--
+
+CREATE TABLE `pets` (
+  `ID_Pets` int(11) NOT NULL,
+  `Species` varchar(50) COLLATE utf8_croatian_ci NOT NULL,
+  `Subspecies` varchar(50) COLLATE utf8_croatian_ci NOT NULL,
+  `Name` varchar(50) COLLATE utf8_croatian_ci NOT NULL,
+  `Sex` varchar(50) COLLATE utf8_croatian_ci NOT NULL,
+  `Age` tinyint(3) UNSIGNED NOT NULL,
+  `Location` varchar(50) COLLATE utf8_croatian_ci NOT NULL,
+  `Description` varchar(200) COLLATE utf8_croatian_ci NOT NULL,
+  `Image` varchar(200) COLLATE utf8_croatian_ci DEFAULT NULL,
+  `Owner` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_croatian_ci;
+
+--
+-- Dumping data for table `pets`
+--
+
+INSERT INTO `pets` (`ID_Pets`, `Species`, `Subspecies`, `Name`, `Sex`, `Age`, `Location`, `Description`, `Image`, `Owner`) VALUES
+(1, 'Dog', 'Pomeranian', 'Ivanka', 'Female', 8, 'Osijek', ' intelligent, friendly, small', './petsImages/dog/pomeranian.jpg', NULL),
+(3, 'Fish', 'Neon Tetra', 'April', 'Female', 2, 'Zadar', 'fast', './petsImages/fish/neon-tetra.jpg', NULL),
+(4, 'Cat', 'British', 'Autumn', 'Female', 6, 'Pula', 'fluffy, playful', './petsImages/cat/british1.jpg', NULL),
+(5, 'Rabbit', 'Rex', 'Bambi', 'Male', 2, 'Umag', 'playful, short fur, fast', './petsImages/rabbit/rex.jpg', NULL),
+(6, 'Rabbit', 'Fuzzy Lop', 'Benny', 'Male', 1, 'Dubrovnik', 'fluffy, fast, playful', './petsImages/rabbit/fuzzy-lop.jpg', NULL),
+(7, 'Dog', 'Pug', 'Brandy', 'Male', 7, 'Rijeka', 'cute, intelligent, playful, affectionate', './petsImages/dog/pug1.jfif', NULL),
+(8, 'Dog', 'French Bulldog', ' Calvin', 'Male', 16, 'Opatija', ' intelligent, calm', './petsImages/dog/frenchie.jpg', NULL),
+(9, 'Rabbit', 'Lionhead', 'Cassy', 'Female', 4, 'Karlovac', 'fluffy, playful', './petsImages/rabbit/lionhead.jpg', NULL),
+(10, 'Cat', 'Balinese', 'Marry', 'Female', 3, 'Split', 'active, fond of people, social, friendly', './petsImages/cat/balinese.jpg', NULL),
+(11, 'Cat', 'Sphynx', 'Dobby', 'Male', 4, 'Pazin', 'outgoing, mischievous, people-orientated, loves attention', './petsImages/cat/sphynx.jpg', NULL),
+(12, 'Bird', 'Parrotlet', 'Dutchess', 'Female', 8, 'Senj', 'colorful, charming, intelligent', './petsImages/bird/parrotlet.jpg', NULL),
+(13, 'Rabbit', 'Angora', 'Felix', 'Male', 13, 'Slavonski Brod', 'docile, sociable', './petsImages/rabbit/angora.jpg', NULL),
+(14, 'Cat', 'Scottish Fold', 'Fergie', 'Female', 15, 'Zagreb', 'sweet, charming, gentle', './petsImages/cat/scottish-fold.jpg', NULL),
+(15, 'Cat', 'Cymric', 'Fuzzy', 'Male', 14, 'Velika Gorica', 'placid, sweet, intelligent, ful-loving', './petsImages/cat/cymric.png', NULL),
+(16, 'Fish', 'Goldfish', 'Grace', 'Female', 3, 'Trogir', 'fast, lives long', './petsImages/fish/goldfish.jpg', NULL),
+(17, 'Dog', 'Afghan Hound', 'Jasmine', 'Female', 16, 'Zagreb', 'strong willed, independent, reserved', './petsImages/dog/afghan-hound.jpg', NULL),
+(18, 'Bird', 'Budgerigar', 'Julius', 'Male', 6, 'Poreč', 'friendly, easy to tame, social, outgoing', './petsImages/bird/budgerigar.jpg', NULL),
+(19, 'Rabbit', 'Netherland Dwarf', 'Lexie', 'Female', 5, 'Makarska', 'fearful, sometimes agressive, passive', './petsImages/rabbit/netherland-dwarf.jpg', NULL),
+(20, 'Dog', 'Retriever', 'Lincoln', 'Male', 7, 'Rijeka', 'intelligent, affectionate, gentle', './petsImages/dog/retriever.jpeg', NULL),
+(21, 'Dog', 'Mastiff', 'Nero', 'Male', 18, 'Pula', 'calm, quiet, kind', './petsImages/dog/mastiff.jpg', NULL),
+(22, 'Dog', 'Pug', 'Peanut', 'Male', 9, 'Zagreb', 'happy, affectionate, loyal, charming, playful, mischievous', './petsImages/dog/pug.jpg', NULL),
+(23, 'Cat', 'Persian', 'Princess', 'Female', 10, 'Varaždin', 'dignified, docile, quiet, sweet', './petsImages/cat/persian.jpg', NULL),
+(24, 'Cat', 'British', 'Puffy', 'Female', 3, 'Dubrovnik', 'easy goding, placid, loyal', './petsImages/cat/british.jfif', NULL),
+(25, 'Bird', 'Cockatiel', 'Roxy', 'Female', 16, 'Sinj', 'active, playful, fun, friendly', './petsImages/bird/cockatiel.jpg', NULL),
+(26, 'Dog', 'Chow chow', 'Simba', 'Male', 7, 'Rijeka', 'always happy, loyal, sleepy', './petsImages/dog/Chow-Dog.webp', NULL),
+(27, 'Fish', 'Clownfish', '     Zeus', 'Female', 2, 'Rijeka', '     lively, active', './petsImages/fish/clownfish.png', 2),
+(28, 'Cat', 'Bengal cat', 'Nala', 'Female', 13, 'Karlovac', 'large, athletic, sweet, intelligent', './petsImages/cat/bengal_cat.jpg', NULL),
+(29, 'Rabbit', 'Mini satin', 'Dixie', 'Female', 4, 'Zagreb', 'calm, sleepy, quiet', './petsImages/rabbit/mini_satin.jpg', NULL),
+(30, 'Rabbit', 'Mini rex', 'Jasper', 'Male', 10, 'Zagreb', 'fuzzy, litter trained, playful, easily startled', './petsImages/rabbit/mini_rex.jpg', NULL),
+(31, 'Bird', 'Red factor canary', 'Sparky', 'Female', 6, 'Dubrovnik', 'loud, active, beautiful voice', './petsImages/bird/red-factor-canary-1.jpg', NULL),
+(32, 'Fish', 'Anfgelfish', 'Ollie', 'Male', 3, 'Pula', 'active, colorful, easy to please', './petsImages/fish/angelfish.jpg', NULL),
+(33, 'Fish', 'Platy', 'Alvin', 'Female', 1, 'Varaždin', 'laterally flattened, small, calming', './petsImages/fish/platy_fish.jpg', NULL),
+(34, 'Turtle', 'Red eared slider', 'Jenna', 'Female', 15, 'Opatija', 'slow, calm, inactive', './petsImages/turtle/turtle.PNG', NULL),
+(35, 'Turtle', 'Indian black', 'Shadow', 'Male', 1, 'Trogir', 'active, harmless, shy, intelligent, sensitive to loud noises', './petsImages/turtle/turtle2.PNG', NULL),
+(36, 'Dog', 'Siberian husky', 'Marius', 'Male', 2, 'Rijeka', 'active, careful, gentle, friendly', './petsImages/dog/Siberian_Husky.jpg', 2),
+(37, 'Dog', 'Dalmatian', 'Tonka', 'Female', 7, 'Zadar', 'playful, energetic, sociable, sensitive', './petsImages/dog/dalmatians_dog.jpg', NULL),
+(38, 'Dog', 'Dogo argentino', 'Zelda', 'Female', 12, 'Rovinj', 'calm, powerful, guardian, protective', './petsImages/dog/dogo.jpg', NULL),
+(39, 'Fish', 'Paracanthurus hepatus', 'Nory', 'Female', 1, 'Senj', 'territorial, aggressive, sleepy', './petsImages/fish/dory.jpg', NULL),
+(40, 'Bird', 'Eclectus', 'Foxy', 'Male', 6, 'Pula', 'beautiful voice, melodious, loveable, tranquil ', './petsImages/bird/eclectus.jpg', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `ID_Users` int(11) NOT NULL,
+  `Name` varchar(50) COLLATE utf8_croatian_ci NOT NULL,
+  `Surname` varchar(50) COLLATE utf8_croatian_ci NOT NULL,
+  `Username` char(30) COLLATE utf8_croatian_ci NOT NULL,
+  `Password` varchar(200) COLLATE utf8_croatian_ci NOT NULL,
+  `Image` varchar(100) COLLATE utf8_croatian_ci NOT NULL DEFAULT './userImages/default.png'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_croatian_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`ID_Users`, `Name`, `Surname`, `Username`, `Password`, `Image`) VALUES
+(1, 'Ivana', 'Štimac', 'ivana.stimac', 'c1a3f619c97e2280e1b0117599ad4d76', './userImages/default.png'),
+(2, 'Hana', 'Lerga', 'hana.lerga', '55e111eb7607edd97913fe1d574a26d7', './userImages/profile-picture.png');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `pets`
+--
+ALTER TABLE `pets`
+  ADD PRIMARY KEY (`ID_Pets`),
+  ADD KEY `Owner` (`Owner`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`ID_Users`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `pets`
+--
+ALTER TABLE `pets`
+  MODIFY `ID_Pets` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `ID_Users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `pets`
+--
+ALTER TABLE `pets`
+  ADD CONSTRAINT `Owner` FOREIGN KEY (`Owner`) REFERENCES `users` (`ID_Users`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
